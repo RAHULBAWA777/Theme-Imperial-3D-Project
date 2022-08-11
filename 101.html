@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/fa1e66a5e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <style>
@@ -26,7 +27,7 @@
   direction: ltr;
   display: block;
   font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 17px;
+  font-size: 27px;
   font-weight: 400;
   letter-spacing: -.022em;
   line-height: 1.47059;
@@ -66,6 +67,33 @@
   box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
   outline: none;
 }
+.dy{
+  background-color: #9acffb;
+  width: fit-content;
+  padding: 2rem ;
+  border-radius: 4px;
+  position: absolute;
+  right: 10px;
+  top: 370px;
+}
+hr {
+  position:relative;
+  padding:1.3rem 0;
+  border:none;
+}
+hr:before {
+  content:'\2044\2217\2013\2013\2013\2013\2013\2217\2044';
+  position:absolute;
+  /* top:1.2rem; */
+  right:0;
+  left:0;
+  font-size:1.5em;
+  color:#0200fb;
+  text-align:center;
+}
+i{
+  font-size: xx-large;
+}
 @media screen and (max-width:600px) {
     .button-15 {
      
@@ -82,7 +110,19 @@
     <body>
         <img src="img\singlr unit plan\type 6.jpg" alt="" srcset="">
          <!-- HTML !-->
-      <button class="button-15" onclick="gb()" role="button">HOME</button>
+      <button class="button-15" onclick="gb()" role="button">🠔</button>
+      <div class="dy">
+        <i class="fa-solid fa-building"></i>        <hr>
+        2BHK | 3 Units
+        <br>
+        <br>
+        1360 Sq.ft-1368 Sq.ft
+        <hr>
+        3BHK | 8 Units
+        <br>
+        <br>
+        1998 Sq.ft-2636 Sq.ft
+      </div>
       <script>
         let gb = () => {
           window.open('index.html', '_self');
