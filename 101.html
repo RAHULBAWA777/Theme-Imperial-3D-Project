@@ -83,6 +83,40 @@ i{
   font-size: xx-large;
   color: maroon;
 }
+.left{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 20%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+ border-radius: 100%;
+ height: 50px;
+ width: 50px;
+ cursor: pointer;
+ }
+ .left:hover{
+background-color: #FFFFFF;
+color: black;
+ }
+ .right{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 20%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+ border-radius: 100%;
+ height: 50px;
+ width: 50px;
+ cursor: pointer;
+ }
+ .right:hover{
+background-color: #FFFFFF;
+color: black;
+ }
 @media screen and (max-width:600px) {
     .button-15 {
      
@@ -109,6 +143,8 @@ left: 40%;
         <img src="img\singlr unit plan\type 1.jpg" alt="" srcset="">
          <!-- HTML !-->
       <button class="button-15" onclick="gb()" role="button">🠔</button>
+      <button class="left"  onclick="ld()">←</button>
+      <button class="right"  onclick="rd()">→</button>
       
       <div class="dy">
         3BHK 
@@ -119,6 +155,12 @@ left: 40%;
       <script>
         let gb = () => {
           window.open('index.html', '_self');
+        }
+        let ld = () => {
+          window.open('100.html', '_self');
+        }
+        let rd = () => {
+          window.open('102.html', '_self');
         }
       </script>
 </body>

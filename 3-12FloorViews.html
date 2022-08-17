@@ -97,14 +97,46 @@ padding: 5px 10px;
 bottom: 0;
 left: 40%;
  }
+ .left{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 1%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+ border-radius: 100%;
+ height: 50px;
+ width: 50px;
+ cursor: pointer;
+ }
+ .left:hover{
+background-color: #FFFFFF;
+color: black;
+ }
+ .right{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 1%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+ border-radius: 100%;
+ height: 50px;
+ width: 50px;
+ cursor: pointer;
+ }
+ .right:hover{
+background-color: #FFFFFF;
+color: black;
+ }
 </style>
 <body>
     <!-- HTML !-->
     <button class="button-15" onclick="gb()" role="button">🠔</button>
-    <!-- HTML !-->
-    <!-- <button class="button-1" onclick="sp()" role="button">SITE PLAN</button>
-
-    <button class="button-0" onclick="con()" role="button">CONTACT</button> -->
+    <button class="left"  onclick="ld()">←</button>
+      <button class="right"  onclick="rd()">→</button>
     <div class="inst">
       <i class="fa-solid fa-arrow-pointer"></i> Click on the Flat of your Interest
      </div>
@@ -112,12 +144,12 @@ left: 40%;
       let gb = () => {
         window.open('index.html', '_self');
       }
-      let sp = () =>{
-        window.open('sitePlan.html', '_self');
-      }
-      let con = () =>{
-     window.open('contact.html', '_self');
-   }
+      let ld = () => {
+          window.open('2ndFloorViews.html', '_self');
+        }
+        let rd = () => {
+          window.open('stiltFloorViews.html', '_self');
+        }
     </script>
 
 
@@ -184,7 +216,7 @@ opacity="0" stroke-width="1px" onmouseout="this.style.opacity=0" onmouseover="th
     d="m181.98 992.64h346.39l-26.884 239.89-47.564-3.102-8.272 47.564-249.19-1.034 6.204-47.564-77.55 3.102 14.476-107.54h-28.952l23.782-105.47 41.36 3.102z"
 opacity="0" stroke-width="1px" onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4"/>
  </a>
-<a target="_self" xlink:href="96.html">
+<a target="_self" xlink:href="101.html">
   <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<img src='img\loacation icon.png'>  3BHK | 1845-2655 Sq.ft"
     style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 d="m495.29 946.11-312.27 1.034 18.612-112.71-25.85-2.068 16.544-85.822h40.326l7.238-37.224 103.4 1.034 10.34-35.156 196.46 8.272z"

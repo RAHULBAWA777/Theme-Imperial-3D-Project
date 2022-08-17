@@ -67,25 +67,57 @@
   box-shadow: rgba(209, 76, 14, 0.5) 0 0 0 3px;
   outline: none;
 }
+.left{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 1%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+ border-radius: 100%;
+ height: 50px;
+ width: 50px;
+ cursor: pointer;
+ }
+ .left:hover{
+background-color: #FFFFFF;
+color: black;
+ }
+ .right{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 1%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+ border-radius: 100%;
+ height: 50px;
+ width: 50px;
+ cursor: pointer;
+ }
+ .right:hover{
+background-color: #FFFFFF;
+color: black;
+ }
     </style>
     <body>
 
 
  <!-- HTML !-->
  <button class="button-15" onclick="gb()" role="button">🠔</button>
- <!-- <button class="button-1" onclick="sp()" role="button">SITE PLAN</button>
- 
- <button class="button-0" onclick="con()" role="button">CONTACT</button> -->
- 
+ <button class="left"  onclick="ld()">←</button>
+ <button class="right"  onclick="rd()">→</button>
  </body>
  <script>
  
- let sp = () =>{
-     window.open('sitePlan.html', '_self');
-   }
-   let con = () =>{
-     window.open('contact.html', '_self');}
-    
+ let ld = () => {
+          window.open('3-12FloorViews.html', '_self');
+        }
+        let rd = () => {
+          window.open('1stFloorViews.html', '_self');
+        }
      function gb() {
        window.open('index.html','_self');
      // history.back();
