@@ -1,165 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/fa1e66a5e4.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/fa1e66a5e4.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <style>
-       body{
-        background-color: #C3C5DE;
-      }
-        img{
-            width: 100%;
-            height: 100vh;
-        }
-        body{
-      background-color: rgb(13,47,49);
+  <style>
+    * {
+      font-family: 'Cabin', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow: hidden;
     }
-      /* CSS */
-.button-15 {
-  background-image: linear-gradient(maroon, rgb(157, 65, 65));
-  border: 1px solid maroon;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  direction: ltr;
-  display: block;
-  font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 27px;
-  font-weight: 400;
-  letter-spacing: -.022em;
-  line-height: 1.47059;
-  min-width: 30px;
-  overflow: visible;
-  padding: 4px 15px;
-  text-align: center;
-  /* vertical-align: baseline; */
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  z-index: 5;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
 
-.button-15:disabled {
-  cursor: default;
-  opacity: .3;
-}
+    body {
+      background-color: #C3C5DE;
+    }
 
-.button-15:hover {
-  background-image: linear-gradient(rgb(47, 22, 22), rgb(199, 34, 34));
-  border-color: maroon;
-  text-decoration: none;
-}
+    img {
+      width: 100%;
+      height: 100vh;
+    }
 
-.button-15:active {
-  background-image: linear-gradient(maroon, maroon);
-  border-color: maroon;
-  outline: none;
-}
+    body {
+      background-color: rgb(13, 47, 49);
+    }
 
-.button-15:focus {
-  box-shadow: rgba(209, 76, 14, 0.5) 0 0 0 3px;
-  outline: none;
-}
-.dy{
-  background-color: rgb(249, 238, 228);
-  width: fit-content;
-  padding: 2rem ;
-  border-radius: 4px;
-  position: absolute;
-  right: 10px;
-  bottom: 0;
-  color: maroon;
-}
-
-i{
-  font-size: xx-large;
-  color: maroon;
-}
-.inst{
-  background-color: rgb(225, 202, 202);
-  font-size: medium;
-  color: maroon;
-  position: absolute;
-padding: 5px 10px;
-bottom: 0;
-left: 40%;
- }
- .left{
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 20%;
-  background-color: black;
-  color: white;
-  font-size: 30px;
- border-radius: 100%;
- height: 50px;
- width: 50px;
- cursor: pointer;
- }
- .left:hover{
-background-color: #FFFFFF;
-color: black;
- }
- .right{
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  right: 20%;
-  background-color: black;
-  color: white;
-  font-size: 30px;
- border-radius: 100%;
- height: 50px;
- width: 50px;
- cursor: pointer;
- }
- .right:hover{
-background-color: #FFFFFF;
-color: black;
- }
-@media screen and (max-width:600px) {
+    /* CSS */
     .button-15 {
-     
-      font-size: .7rem;
+      background-image: linear-gradient(maroon, rgb(157, 65, 65));
+      border: 1px solid maroon;
+      border-radius: 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      direction: ltr;
+      display: block;
+      font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 27px;
+      font-weight: 400;
+      letter-spacing: -.022em;
+      line-height: 1.47059;
+      min-width: 30px;
+      overflow: visible;
+      padding: 4px 15px;
+      text-align: center;
+      /* vertical-align: baseline; */
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      z-index: 5;
+      position: absolute;
+      top: 10px;
+      left: 10px;
     }
-    img{
-          margin-left: 0;
-          height: auto;
-          width: 100vw;
-         margin-top: 50%;
-        }
-  }
-    </style>
-    <body>
-        <img src="img\singlr unit plan/first floor.jpg" alt="" srcset="">
-         <!-- HTML !-->
-      <button class="button-15" onclick="gb()" role="button">🠔</button>
-      <button class="left"  onclick="ld()">←</button>
-      <button class="right"  onclick="rd()">→</button>
-      <div class="dy">
+
+    .button-15:disabled {
+      cursor: default;
+      opacity: .3;
+    }
+
+    .button-15:hover {
+      background-image: linear-gradient(rgb(47, 22, 22), rgb(199, 34, 34));
+      border-color: maroon;
+      text-decoration: none;
+    }
+
+    .button-15:active {
+      background-image: linear-gradient(maroon, maroon);
+      border-color: maroon;
+      outline: none;
+    }
+
+    .button-15:focus {
+      box-shadow: rgba(209, 76, 14, 0.5) 0 0 0 3px;
+      outline: none;
+    }
+
+    .dy {
+      background-color: rgb(249, 238, 228);
+      width: fit-content;
+      padding: 2rem;
+      border-radius: 4px;
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+      color: maroon;
+    }
+
+    i {
+      font-size: xx-large;
+      color: maroon;
+    }
+
+    .inst {
+      background-color: rgb(225, 202, 202);
+      font-size: medium;
+      color: maroon;
+      position: absolute;
+      padding: 5px 10px;
+      bottom: 0;
+      left: 40%;
+    }
+
+    .left {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 20%;
+      background-color: black;
+      color: white;
+      font-size: 30px;
+      border-radius: 100%;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+    }
+
+    .left:hover {
+      background-color: #FFFFFF;
+      color: black;
+    }
+
+    .right {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      right: 20%;
+      background-color: black;
+      color: white;
+      font-size: 30px;
+      border-radius: 100%;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+    }
+
+    .right:hover {
+      background-color: #FFFFFF;
+      color: black;
+    }
+
+    @media screen and (max-width:600px) {
+      .button-15 {
+
+        font-size: .7rem;
+      }
+
+      img {
+        margin-left: 0;
+        height: auto;
+        width: 100vw;
+        margin-top: 50%;
+      }
+    }
+  </style>
+
+  <body>
+    <img src="img\singlr unit plan/first floor.jpg" alt="" srcset="">
+    <!-- HTML !-->
+    <button class="button-15" onclick="gb()" role="button">🠔</button>
+    <!-- <button class="left"  onclick="ld()">←</button>
+      <button class="right"  onclick="rd()">→</button> -->
+    <div class="dy">
       14,000+ Sq.ft
-      </div>
-      <script>
-        let gb = () => {
-          window.open('index.html', '_self');
-        }
-        let ld = () => {
-          window.open('96.html', '_self');
-        }
-        let rd = () => {
-          window.open('99.html', '_self');
-        }
-      </script>
-</body>
+    </div>
+    <script>
+      let gb = () => {
+        window.open('index.html', '_self');
+      }
+      let ld = () => {
+        window.open('96.html', '_self');
+      }
+      let rd = () => {
+        window.open('99.html', '_self');
+      }
+    </script>
+  </body>
+
 </html>
