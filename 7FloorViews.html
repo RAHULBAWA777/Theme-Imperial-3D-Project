@@ -152,7 +152,42 @@
     bottom: 0;
     color: maroon;
   }
+  nav {
+    position: fixed;
+    background-color: transparent;
+    z-index: 4;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: rgba(80, 90, 93, 0.55) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
 
+  nav li {
+    list-style: none;
+    padding: 0 1rem;
+
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  nav li a {
+    color: whitesmoke;
+    display: flex;
+    /* margin: 5px 5px; */
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  nav li a:hover {
+    color: maroon;
+    transition: 500ms;
+  }
   @media screen and (max-width:600px) {
     svg {
       width: 100vw;
@@ -188,10 +223,41 @@
   img {
     width: 20px;
   }
+  nav ul {
+      margin-right: 0;
+    }
+
+    nav li a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      font-size: small;
+    }
+
+    nav li {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
   }
 </style>
 
 <body>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <!-- <li>
+        <a href="sitePlan.html">Site Plan</a>
+      </li> -->
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+
+  </nav>
   <!-- HTML !-->
   <button class="button-15" onclick="gb()" role="button">🠔</button>
   <button class="left" onclick="ld()">←</button>
@@ -223,7 +289,7 @@
 
     <a target="_self" xlink:href="97.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>  3BHK | 1845-2655 Sq.ft"
+        title="<img src='img\loacation icon.png'>  3BHK | 2250 Sq.ft"
         style="opacity:0;fill:#00ffff;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m3253 1044.3 336.05-3.102 27.918 146.83h34.122l23.782 126.15-92.026 2.068 8.272 47.564-207.83 6.204-9.306-45.496h-88.924z"
         opacity="0" stroke-width="1.0016" onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
@@ -231,7 +297,7 @@
 
     <a target="_self" xlink:href="96.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>  4BHK | 1845-2655 Sq.ft"
+        title="<img src='img\loacation icon.png'>  4BHK | 2655 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m2863.2 974.03c240.92-12.408 304-3.102 304-3.102l54.802 352.59-36.19 2.068 8.272 48.598-185.09 2.068-9.306-51.7-101.33 4.1361z"
         stroke-width="8.5606" onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
@@ -239,14 +305,14 @@
 
     <a target="_self" xlink:href="99.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>  2BHK | 1470 Sq.ft"
+        title="<img src='img\loacation icon.png'>  2BHK | 1845 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m1649.5 1064.6 228.12 5.8492 8.7738 371.42-266.14-5.8492z" opacity="0" stroke-width="1px"
         onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
     </a>
     <a target="_self" xlink:href="99.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>  2BHK | 1470 Sq.ft"
+        title="<img src='img\loacation icon.png'>  2BHK | 1845 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m1953.6 1070.4 233.97-2.9246 17.548 359.73-254.44 8.7738z" opacity="0" stroke-width="1px"
         onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
@@ -254,14 +320,14 @@
 
     <a target="_self" xlink:href="99.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>  2BHK | 1470 Sq.ft"
+        title="<img src='img\loacation icon.png'>  2BHK | 1845 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m2266.6 1064.6 233.97-5.8492 20.472 388.97-251.52 2.9246z" opacity="0" stroke-width="1px"
         onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
     </a>
     <a target="_self" xlink:href="99.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>  2BHK | 1470 Sq.ft"
+        title="<img src='img\loacation icon.png'>  2BHK | 1845 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m2573.6 1070.4 228.12-2.9246 46.794 362.65-257.36 2.9246z" opacity="0" stroke-width="1px"
         onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
@@ -270,42 +336,42 @@
 
     <a target="_self" xlink:href="99.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>  2BHK | 1470 Sq.ft"
+        title="<img src='img\loacation icon.png'>  2BHK | 1845 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m1095 985.4 231.62 3.102-12.408 363.97-236.79 5.17 2.068-51.7h-18.612z" opacity="0" stroke-width="1px"
         onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
     </a>
     <a target="_self" xlink:href="99.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>  2BHK | 1470 Sq.ft"
+        title="<img src='img\loacation icon.png'>  2BHK | 1845 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff05;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m789.98 985.4 232.65 3.102-32.054 367.07-213-4.136 5.17-44.462h-28.952z" opacity="0" stroke-width="1px"
         onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
     </a>
     <a target="_self" xlink:href="100.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>  3BHK | 1845-2655 Sq.ft"
+        title="<img src='img\loacation icon.png'>  3BHK | 2090 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m181.98 992.64h346.39l-26.884 239.89-47.564-3.102-8.272 47.564-249.19-1.034 6.204-47.564-77.55 3.102 14.476-107.54h-28.952l23.782-105.47 41.36 3.102z"
         opacity="0" stroke-width="1px" onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
     </a>
     <a target="_self" xlink:href="101.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>  3BHK | 1845-2655 Sq.ft"
+        title="<img src='img\loacation icon.png'>  3BHK | 2170 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m495.29 946.11-312.27 1.034 18.612-112.71-25.85-2.068 16.544-85.822h40.326l7.238-37.224 103.4 1.034 10.34-35.156 196.46 8.272z"
         opacity="0" stroke-width="1px" onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
     </a>
     <a target="_self" xlink:href="102.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>   3BHK | 1845-2655 Sq.ft"
+        title="<img src='img\loacation icon.png'>   3BHK | 2075 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m573.87 936.81 308.13 2.068 28.952-259.53-204.73-1.034-1.034 29.986h-100.3z" opacity="0" stroke-width="1px"
         onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
     </a>
     <a target="_self" xlink:href="102.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>   3BHK | 1845-2655 Sq.ft"
+        title="<img src='img\loacation icon.png'>   3BHK | 2075 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m951.28 939.91 26.884-233.68 96.162 2.068 1.034-32.054 194.39 6.204-15.51 260.57z" opacity="0"
         stroke-width="1px" onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
@@ -319,35 +385,35 @@
     </a>
     <a target="_self" xlink:href="104.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>   4BHK | 1845-2655 Sq.ft"
+        title="<img src='img\loacation icon.png'>  4BHK | 2655 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m1601.7 1008.2 311.23-1.034-9.3061-317.44-98.23 1.034v-21.714l-164.41 5.17 2.068 25.85-38.258 2.068z"
         opacity="0" stroke-width="1px" onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
     </a>
     <a target="_self" xlink:href="104.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>   4BHK | 1845-2655 Sq.ft"
+        title="<img src='img\loacation icon.png'>  4BHK | 2655 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m1991.5 1000.9 306.06 1.034-19.646-309.17h-44.462l-1.034-26.884h-150.96v21.714l-95.128 2.068z" opacity="0"
         stroke-width="1px" onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
     </a>
     <a target="_self" xlink:href="102.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>   3BHK | 1845-2655 Sq.ft"
+        title="<img src='img\loacation icon.png'>   3BHK | 2075 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff02;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m2371 923.36 295.72-3.102-20.68-230.58-38.258 1.034-5.17-27.918-162.34 3.102v40.326l-87.89-1.034z"
         opacity="0" stroke-width="1px" onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
     </a>
     <a target="_self" xlink:href="102.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>   3BHK | 1845-2655 Sq.ft"
+        title="<img src='img\loacation icon.png'>   3BHK | 2075 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff06;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m2742.2 923.36 304 3.102-36.19-236.79h-44.462l-5.17-29.986-150.96 3.102 2.068 29.986-98.23-2.068z"
         opacity="0" stroke-width="1px" onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />
     </a>
     <a target="_self" xlink:href="98.html">
       <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top"
-        title="<img src='img\loacation icon.png'>   3BHK | 1845-2655 Sq.ft"
+        title="<img src='img\loacation icon.png'>   3BHK | 2275 Sq.ft"
         style="opacity:0;fill:#00ffff;fill-opacity:1;stroke:#ffff00;stroke-width:20.56063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
         d="m3110.3 922.33 375.34-12.408-15.51-83.754-51.7 1.034-26.884-144.76-64.108 1.034-4.136-21.714-150.96 1.034 3.102 22.748-95.128 4.136z"
         opacity="0" stroke-width="1px" onmouseout="this.style.opacity=0" onmouseover="this.style.opacity=0.4" />

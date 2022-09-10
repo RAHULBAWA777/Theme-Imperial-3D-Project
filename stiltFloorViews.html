@@ -1,165 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <style>
-        img{
-            width: 100%;
-            height: 97vh;
-        }
-        
-        body{
-      background-color: rgb(13,47,49);
+  <style>
+    img {
+      width: 100%;
+      height: 97vh;
     }
-      /* CSS */
-.button-15 {
-  background-image: linear-gradient(#F9EEE4, rgb(244, 200, 126));
-  border: 1px solid maroon;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  direction: ltr;
-  display: block;
-  font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 27px;
-  font-weight: 400;
-  letter-spacing: -.022em;
-  line-height: 1.47059;
-  min-width: 30px;
-  overflow: visible;
-  padding: 4px 15px;
-  text-align: center;
-  /* vertical-align: baseline; */
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  z-index: 5;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
 
-.button-15:disabled {
-  cursor: default;
-  opacity: .3;
-}
+    body {
+      background-color: rgb(13, 47, 49);
+    }
 
-.button-15:hover {
-  background-image: linear-gradient(#F9EEE4, rgb(244, 200, 126));
-  border-color: maroon;
-  text-decoration: none;
-}
-
-.button-15:active {
-  background-image: linear-gradient(#F9EEE4, rgb(244, 200, 126));
-  border-color: maroon;
-  outline: none;
-}
-
-.button-15:focus {
-  box-shadow: rgba(209, 76, 14, 0.5) 0 0 0 3px;
-  outline: none;
-}
-.left{
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 1%;
-  background-color: black;
-  color: white;
-  font-size: 30px;
- border-radius: 100%;
- height: 50px;
- width: 50px;
- cursor: pointer;
- }
- .left:hover{
-background-color: #FFFFFF;
-color: black;
- }
- .right{
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  right: 1%;
-  background-color: black;
-  color: white;
-  font-size: 30px;
- border-radius: 100%;
- height: 50px;
- width: 50px;
- cursor: pointer;
- }
- .right:hover{
-background-color: #FFFFFF;
-color: black;
- }
- @media screen and (max-width:600px) {
+    /* CSS */
     .button-15 {
-     
-      font-size: .7rem;
-    }
-    img{
-          margin-left: 0;
-          height: auto;
-          width: 100vw;
-         margin-top: 16%;
-        }
-        .inst{
-  background-color: rgb(225, 202, 202);
-  font-size: medium;
-  color: maroon;
-  position: absolute;
-padding: 5px 10px;
-bottom: 0;
-left: 40%;
- }
- .left, .right{
-      font-size: 10px;
-      height: 30px;
-      width: 30px;
-    }
-    .left{
+      background-image: linear-gradient(#F9EEE4, rgb(244, 200, 126));
+      border: 1px solid maroon;
+      border-radius: 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      direction: ltr;
+      display: block;
+      font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 27px;
+      font-weight: 400;
+      letter-spacing: -.022em;
+      line-height: 1.47059;
+      min-width: 30px;
+      overflow: visible;
+      padding: 4px 15px;
+      text-align: center;
+      /* vertical-align: baseline; */
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      z-index: 5;
+      position: absolute;
+      top: 10px;
       left: 10px;
     }
-    .right{
-      right: 10px;
+
+    nav {
+      position: fixed;
+      background-color: transparent;
+      z-index: 4;
+      width: 100%;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      box-shadow: rgba(80, 90, 93, 0.55) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
-  
-  }
-    </style>
-    <body>
+
+    nav li {
+      list-style: none;
+      padding: 0 1rem;
+
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    nav li a {
+      color: whitesmoke;
+      display: flex;
+      /* margin: 5px 5px; */
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav li a:hover {
+      color: maroon;
+      transition: 500ms;
+    }
+
+    .button-15:disabled {
+      cursor: default;
+      opacity: .3;
+    }
+
+    .button-15:hover {
+      background-image: linear-gradient(#F9EEE4, rgb(244, 200, 126));
+      border-color: maroon;
+      text-decoration: none;
+    }
+
+    .button-15:active {
+      background-image: linear-gradient(#F9EEE4, rgb(244, 200, 126));
+      border-color: maroon;
+      outline: none;
+    }
+
+    .button-15:focus {
+      box-shadow: rgba(209, 76, 14, 0.5) 0 0 0 3px;
+      outline: none;
+    }
+
+    .left {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 1%;
+      background-color: black;
+      color: white;
+      font-size: 30px;
+      border-radius: 100%;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+    }
+
+    .left:hover {
+      background-color: #FFFFFF;
+      color: black;
+    }
+
+    .right {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      right: 1%;
+      background-color: black;
+      color: white;
+      font-size: 30px;
+      border-radius: 100%;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+    }
+
+    .right:hover {
+      background-color: #FFFFFF;
+      color: black;
+    }
+
+    @media screen and (max-width:600px) {
+      .button-15 {
+
+        font-size: .7rem;
+      }
+
+      img {
+        margin-left: 0;
+        height: auto;
+        width: 100vw;
+        margin-top: 16%;
+      }
+
+      nav ul {
+        margin-right: 0;
+      }
+
+      nav li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        font-size: small;
+      }
+
+      nav li {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .inst {
+        background-color: rgb(225, 202, 202);
+        font-size: medium;
+        color: maroon;
+        position: absolute;
+        padding: 5px 10px;
+        bottom: 0;
+        left: 40%;
+      }
+
+      .left,
+      .right {
+        font-size: 10px;
+        height: 30px;
+        width: 30px;
+      }
+
+      .left {
+        left: 10px;
+      }
+
+      .right {
+        right: 10px;
+      }
+
+    }
+  </style>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <!-- <li>
+            <a href="sitePlan.html">Site Plan</a>
+          </li> -->
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <!-- HTML !-->
+    <button class="button-15" onclick="gb()" role="button">🠔</button>
+    <button class="left" onclick="ld()">←</button>
+    <button class="right" onclick="rd()">→</button>
+  </body>
+  <script>
+
+    let ld = () => {
+      window.open('3-12FloorViews.html', '_self');
+    }
+    let rd = () => {
+      window.open('1stFloorViews.html', '_self');
+    }
+    function gb() {
+      window.open('index.html', '_self');
+      // history.back();
+    }
+  </script>
 
 
- <!-- HTML !-->
- <button class="button-15" onclick="gb()" role="button">🠔</button>
- <button class="left"  onclick="ld()">←</button>
- <button class="right"  onclick="rd()">→</button>
- </body>
- <script>
- 
- let ld = () => {
-          window.open('3-12FloorViews.html', '_self');
-        }
-        let rd = () => {
-          window.open('1stFloorViews.html', '_self');
-        }
-     function gb() {
-       window.open('index.html','_self');
-     // history.back();
- }
- </script>
+  <img src="img/Stilt plan.jpg" alt="" srcset="">
 
-
-        <img src="img/Stilt plan.jpg" alt="" srcset="">
-        
-      </script>
+  </script>
 </body>
+
 </html>

@@ -78,15 +78,82 @@
   box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
   outline: none;
 }
+nav {
+    position: fixed;
+    background-color: transparent;
+    z-index: 4;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: rgba(80, 90, 93, 0.55) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+  nav li {
+    list-style: none;
+    padding: 0 1rem;
+
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  nav li a {
+    color: whitesmoke;
+    display: flex;
+    /* margin: 5px 5px; */
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  nav li a:hover {
+    color: maroon;
+    transition: 500ms;
+  }
+@media screen and (max-width:600px) {
+  nav ul {
+      margin-right: 0;
+    }
+
+    nav li a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      font-size: small;
+    }
+
+    nav li {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+}
 </style>
 <body>
+  <!-- <nav>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+
+  </nav> -->
 
  <!-- HTML !-->
  <button class="button-15" onclick="gb()" role="button">🠔</button>
 
  <script>
    let gb = () => {
-     window.open('index.html', '_self');
+     history.back();
    }
   
 
@@ -94,14 +161,12 @@
 
     <div class="container">
         <div class="header" style="color: maroon; font-size: 60px; margin-bottom: 40px;">Theme Ambience</div>
-        <p>D.No 8-2-293/82/L/1-B. 1st Floor,</p>
+        <p>Plot 1-B, H.No. 8-2-293/82/L/1-B. 1st Floor,</p>
         <p>MLA Colony, Road No. 12,</p>
-        <p>Banjara Hills, Hyderabad - 500O34</p>
-        <p>Ph : 040-23377851/2/3,</p>
-        <p>Mobile : +91-9391050852, 9393008035, 9177711339</p>
-        <p>Fax : 040-23377854</p>
-        <p>Email : <a href="theme@themeambience.com">theme@themeambience.com</a> (For sales and marketing queries)</p>
-        <p>Email : <a href="mailto: themeambience@gmail.com">theme@themeambience.com</a> (For sales and marketing queries)</p>
+        <p>Banjara Hills, Hyderabad - 500034</p>
+        <p>Mobile :  9391415599 / 9391415884 / 6303363461</p>
+        <p>Email : <a href="Sales22@propbuynsell.com">Sales22@propbuynsell.com</a> (For sales and marketing queries)</p>
+       
     </div>
 </body>
 </html>
