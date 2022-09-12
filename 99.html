@@ -363,7 +363,10 @@ color: black;
         2BHK 
         <br>
         <hr>
-        1470 Sq.ft
+        1845 Sq.ft
+        <br>
+        <hr>
+        <p id="incommingWords"></p>
       </div>
       <div class="dPic">
         <p style="text-align:center; padding-top: 10px;">Click for 2D view</p>
@@ -376,9 +379,17 @@ color: black;
         <img class="modal-content" id="img01">
       </div>
       <script>
-        let gb = () => {
-          history.back();
-        }
+           // ############ GETTING INFO FROM LOCAL STORAGE ###############
+      let localData = localStorage.getItem("infoIncoming");
+      document.getElementById("incommingWords").innerText = localData;
+   
+      let gb = () => {
+        history.back();
+        let timeFunc = ()=>{
+        localStorage.removeItem("infoIncoming");
+      }
+        setTimeout(timeFunc, 1000);
+      }
         let ld = () => {
           window.open('96.html', '_self');
         }

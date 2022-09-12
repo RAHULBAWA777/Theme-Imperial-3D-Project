@@ -364,7 +364,10 @@ left: 40%;
         3BHK 
         <br>
         <hr>
-        1845 Sq.ft-2655 Sq.ft
+        2090 Sq.ft
+        <br>
+        <hr>
+        <p id="incommingWords"></p>
       </div>
       <div class="dPic">
         <p style="text-align:center; padding-top: 10px;">Click for 2D view</p>
@@ -377,9 +380,17 @@ left: 40%;
         <img class="modal-content" id="img01">
       </div>
       <script>
-        let gb = () => {
-          history.back();
-        }
+         // ############ GETTING INFO FROM LOCAL STORAGE ###############
+         let localData = localStorage.getItem("infoIncoming");
+      document.getElementById("incommingWords").innerText = localData;
+   
+      let gb = () => {
+        history.back();
+        let timeFunc = ()=>{
+        localStorage.removeItem("infoIncoming");
+      }
+        setTimeout(timeFunc, 1000);
+      }
         let ld = () => {
           window.open('99.html', '_self');
         }

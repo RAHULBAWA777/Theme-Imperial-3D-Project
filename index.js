@@ -1,21 +1,3 @@
-// const imageClass = document.querySelectorAll(".moPic")
-// let imgSrc;
-// imageClass.forEach((img)=>{
-//     img.addEventListener("click",(e)=>{
-//         imgSrc=e.target.src;
-// console.log(imgSrc)
-//     })
-// })
-
-// let imgModal= (src)=>{
-//     const modal = document.createElement("div");
-//     modal.setAttribute("class", "modal");
-//     document.querySelector(".main").append(modal);
-//     const newImage = document.createElement("img");
-//     newImage.setAttribute("src", src);
-//     modal.append(newImage)
-// }
-
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -35,3 +17,7 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+
+// dy div info exchange logic
+
